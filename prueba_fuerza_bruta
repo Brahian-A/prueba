@@ -1,0 +1,9 @@
+import itertools
+pin_correcto = "3556"
+for pin in itertools.product("0123456789", repeat=4):
+    intento = "".join(pin)
+    if intento == pin_correcto:
+        print("PIN encontrado:", intento)
+        break
+    else:
+        print("Intento:", intento)
